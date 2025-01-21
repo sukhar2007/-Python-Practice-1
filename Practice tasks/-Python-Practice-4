@@ -1,0 +1,28 @@
+№1
+# Вариант 6
+user = input("Введите строку: ")
+if user[0] == user[-1]:
+    print(True)
+else:
+    print(False)
+№2
+# Вариант 6
+user = int(input("Введите число: "))
+if user % 2 == 0:
+    print(user ** 2)
+elif user % 3 == 0:
+    print(user ** 3)
+else:
+    print(user * 100)
+№3
+# Вариант 6
+user1 = int(input("Введите первое число: "))
+user2 = int(input("Введите второе число: "))
+if user1 >= 0 and user2 >= 0:
+    print(True)
+elif user1 < 0 and user2 < 0:
+    print(False)
+elif user1 < 0:
+    print(user1 + 1000, user2)
+elif user2 < 0:
+    print(user1, user2 + 1000)

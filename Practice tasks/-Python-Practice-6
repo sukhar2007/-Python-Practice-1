@@ -1,0 +1,62 @@
+№1
+matrix = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+nc = []
+c = 0
+print("matrix:")
+for a in matrix:
+    print(a)
+for r in matrix:
+    for e in r:
+        if e % 2 != 0:
+            nc.append(e)
+        else:
+            c += 1
+print(f"Нечётные числа matrix:\n{nc}")
+print(f"Количество чётных: {c}")
+№2
+matrix1 = [[2, 4, 3, 6],
+           [5, 7, 1, 5]]
+matrix2 = [[2, 9, 0, 2],
+           [3, 4, 7, 6]]
+answer = [[0, 0, 0, 0],
+          [0, 0, 0, 0]]
+for row in range(len(answer)):
+    for elem in range(len(answer[0])):
+        answer[row][elem] = matrix1[row][elem] * matrix2[row][elem]
+sum1 = 0
+sum2 = 0
+for i in answer[0]:
+    sum1 += i
+for i in answer[1]:
+    sum2 += i
+print(f"{answer}\n{answer[0]} сумма строки: {sum1}\n{answer[1]} сумма строки: {sum2}")
+№3
+fruits = [["Banana", "apple"], ["apricot", "Avocado"], ["lime", "lemon"], ["Mango", "grapes"]]
+upper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+answer = []
+for row in fruits:
+    for element in row:
+        if element[0] in upper:
+            answer.append(element)
+print(answer)
+№4
+random_elements = [["toy", "bee", "cheese", "ear"],
+                   [False, "word", "0110110", 10],
+                   ["happiness", "(ノ ゜Д゜)ノ ︵ ┻━┻", "luck", None],
+                   ["car", "<- code ->", 4.7, True]]
+answer = []
+for row in random_elements:
+    for i, element in enumerate(row):
+        if i % 2 == 0:
+            answer.append(element)
+print(answer)
+№5
+row_number = int(input("Введите число строк: "))
+ele_number = int(input("Введите число столбцов: "))
+matrix = []
+for row in range(row_number):
+    matrix.append([])
+    for ele in range(ele_number):
+        matrix[row].append(0)
+        matrix[row][ele] = int(input(f"Введите значение элемента [{row}][{ele}]: "))
+print(f"Ваш двумерный массив:\n{matrix}")

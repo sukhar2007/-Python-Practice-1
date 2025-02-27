@@ -17,13 +17,13 @@ print(dict_var)
 print(set_var)
 print(bool_var)
 №2
-name = "Alexey"
-age = 19
-average_grade = 4.3
-favorite_movies = ["Interstellar", "Lord of The Rings", "DMB"]
-personal_info = ("Volkov", 444, 4.7)
+name = "Anne"
+age = 17
+average_grade = 3.5
+favorite_movies = ["Interstellar", "AHS", "DMB"]
+personal_info = ("Sukhareva", 444, 4.7)
 skills = {"Programming": 7, "Math": 8, "Sleeping": 10}
-visited_countries = {"Russia", "Georgia", "Ukraine", "Turkey"}
+visited_countries = {"Russia", "Turkey"}
 has_driver_license = False
 
 print(name)

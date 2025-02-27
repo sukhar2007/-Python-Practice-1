@@ -17,7 +17,7 @@ print(dict_var)
 print(set_var)
 print(bool_var)
 №2
-name = "Anne"
+name = "Anna"
 age = 17
 average_grade = 3.5
 favorite_movies = ["Interstellar", "AHS", "DMB"]
